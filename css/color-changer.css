@@ -1,0 +1,69 @@
+.color-choice span:first-child {
+    background: #ffb400;
+}
+
+.color-choice span:nth-child(2) {
+    background: #81c958;
+}
+
+.color-choice span:nth-child(3) {
+    background: #00d7ff;
+}
+
+.color-choice span:nth-child(4) {
+    background: #b39400;
+}
+
+.color-choice span:nth-child(5) {
+    background: #8C6C46;
+}
+
+.color-choice span:nth-child(6) {
+    background: #ce5a20;
+}
+body.primary {
+    --primary: #ffb400;
+}
+body.green {
+    --primary: #81c958;
+}
+body.blue {
+    --primary: #00d7ff;
+}
+body.light-brown {
+    --primary: #b39400;
+}
+body.brown {
+    --primary: #8C6C46;
+}
+body.red {
+    --primary: #ce5a20;
+}
+body.light-mode {
+    background: #fff;
+    --white: #000;
+    --icons: #00000014;
+    --border: transparent;
+    --gray: #0000002e;
+    --f-box: #fff;
+    --white2: #fff;
+    --dark-shadow: 0 0 18px #000000a1;
+    --light-shadow: -20px 0 25px #00000014;
+    --black: #fff;
+    --footer-black: #80808026;
+    --menu-black: #fff;
+    --menubar-shadow: 5px 0 25px #00000059;
+}
+.light-mode .main-heading span {
+    -webkit-text-stroke: 1px var(--primary);
+    background-image: linear-gradient(90deg, var(--primary) 0%, var(--primary) 50%, transparent 50.1%);
+    opacity: 1;
+}
+.light-mode .main-heading h2 {
+    color: var(--white);
+    -webkit-text-stroke: 2px #fff;
+}
+.light-mode .progressbar {
+    background-color: var(--gray) !important;
+}
+
