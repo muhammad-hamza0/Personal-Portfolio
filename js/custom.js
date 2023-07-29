@@ -232,27 +232,17 @@ $(document).ready(function() {
   });
 
 });
+function progressBarScroll() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
 
-// gsap 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+window.onscroll = function () {
+  progressBarScroll();
+};
 
-ScrollTrigger.normalizeScroll(true)
-
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-  normalizeScroll: true
-});
-
-// pin box-c when it reaches the center of the viewport, for 300px
-ScrollTrigger.create({
-  trigger: ".box-c",
-  pin: true,
-  start: "center center",
-  end: "+=300",
-  markers: true
-});
 
 
 

@@ -59,10 +59,6 @@
     .feature-box p {
         font-size: 17px;
     }
-    section.nav-menus 
-    {
-        top: 250px;
-    }
     
 }
 @media (max-width: 1599px) {
@@ -306,10 +302,7 @@
     .color-choice {
         bottom: -50px;
     }
-    section.nav-menus 
-    {
-        top: 230px;
-    }
+    
     
 }
 @media (max-width: 1439px) {
@@ -577,10 +570,6 @@
     }
     .color-choice {
         bottom: -40px;
-    }
-    section.nav-menus 
-    {
-        top: 210px;
     }
     
 }
@@ -904,10 +893,7 @@
     .social-media ul {
         margin-bottom: 10px;
     }
-    section.nav-menus 
-    {
-        top: 190px;
-    }
+    
     
 }
 @media (max-width: 991px) {

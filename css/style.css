@@ -186,7 +186,8 @@ section.hero:before {
 section.nav-menus {
     position: absolute;
     right: 40px;
-    top: 330px;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 .hero-img {
@@ -896,9 +897,23 @@ p.copyright {
 }
 /*============ contact section  ============*/
 
-/*============ gsap section  ============*/
+/*============ progressbar section  ============*/
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.8%;
+    z-index: 9999;
+}
+
+.progress-container .progress-bar {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 50px;
+}
 [class*=gsap-marker] {
     display: none !important;
 }
-/*============ gsap section  ============*/
+/*============ progressbar section  ============*/
 
